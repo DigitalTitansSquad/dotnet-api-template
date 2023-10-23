@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Sebi",
+    "classifications": [ "Common", "Console" ],
+    "identity": "DotnetApi",
+    "name": "Dotnet api template",
+    "shortName": "DotnetApi",
+    "sourceName":"DotnetApi",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    }
+  }
