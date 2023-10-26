@@ -1,6 +1,6 @@
 {
     "$schema": "http://json.schemastore.org/template",
-    "author": "Sebi",
+    "author": "The TEAM",
     "classifications": [ "Common", "Console" ],
     "identity": "DotnetApi",
     "name": "Dotnet api template",
