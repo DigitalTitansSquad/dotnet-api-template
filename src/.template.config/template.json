@@ -1,11 +1,11 @@
 {
     "$schema": "http://json.schemastore.org/template",
-    "author": "The TEAM",
-    "classifications": [ "Common", "Console" ],
+    "author": "Digital Titans",
+    "classifications": [ "WebApi" ],
     "identity": "DotnetApi",
-    "name": "Dotnet api template",
+    "name": "Digital Titans Api Template",
     "shortName": "DotnetApi",
-    "sourceName":"DotnetApi",
+    "sourceName":"DigitalTitans.DotnetApi",
     "tags": {
       "language": "C#",
       "type": "project"
