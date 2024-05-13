@@ -1,8 +1,8 @@
 ﻿using System;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using DigitalTitans.DotnetApi.Common.Api;
-using DigitalTitans.DotnetApi.Common.Extensions;
+using DigitalTitans.DotnetApi.Core.Common.Api;
+using DigitalTitans.DotnetApi.Core.Common.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace DigitalTitans.DotnetApi.Core.Common.Interfaces

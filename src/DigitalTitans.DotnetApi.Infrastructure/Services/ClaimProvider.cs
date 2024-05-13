@@ -1,5 +1,5 @@
 using System.Security.Claims;
-using DigitalTitans.DotnetApi.Common.Interfaces;
+using DigitalTitans.DotnetApi.Core.Common.Interfaces;
 using Microsoft.AspNetCore.Http;
 
 namespace DigitalTitans.DotnetApi.Infrastructure.Services

@@ -1,5 +1,5 @@
 ﻿using System;
-using DigitalTitans.DotnetApi.Common.Interfaces;
+using DigitalTitans.DotnetApi.Core.Common.Interfaces;
 using DigitalTitans.DotnetApi.Core.Models;
 using DigitalTitans.DotnetApi.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;

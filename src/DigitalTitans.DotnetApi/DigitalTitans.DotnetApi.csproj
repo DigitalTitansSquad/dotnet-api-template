@@ -22,10 +22,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DigitalTitans.DotnetApi.Common\DigitalTitans.DotnetApi.Common.csproj">
-      <ReferenceSourceTarget></ReferenceSourceTarget>
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
-    </ProjectReference>
     <ProjectReference Include="..\DigitalTitans.DotnetApi.Core\DigitalTitans.DotnetApi.Core.csproj">
       <ReferenceSourceTarget></ReferenceSourceTarget>
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>

@@ -1,5 +1,5 @@
 ﻿using System;
-using DigitalTitans.DotnetApi.Common.Interfaces;
+using DigitalTitans.DotnetApi.Core.Common.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DigitalTitans.DotnetApi.Infrastructure.Services.Extensions

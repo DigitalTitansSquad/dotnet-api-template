@@ -1,4 +1,4 @@
-namespace DigitalTitans.DotnetApi.Common.Api;
+namespace DigitalTitans.DotnetApi.Core.Common.Api;
 
 [AttributeUsage(AttributeTargets.Property)]
 public class SwaggerIgnoreAttribute : Attribute { }

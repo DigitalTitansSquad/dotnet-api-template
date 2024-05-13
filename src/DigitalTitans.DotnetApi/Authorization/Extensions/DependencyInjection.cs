@@ -1,4 +1,4 @@
-﻿using DigitalTitans.DotnetApi.Common.Auth;
+﻿using DigitalTitans.DotnetApi.Core.Common.Auth;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DigitalTitans.DotnetApi.Authorization.Extensions;

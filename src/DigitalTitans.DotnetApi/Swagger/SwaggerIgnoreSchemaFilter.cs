@@ -1,5 +1,5 @@
-using DigitalTitans.DotnetApi.Common.Api;
-using DigitalTitans.DotnetApi.Common.Extensions;
+using DigitalTitans.DotnetApi.Core.Common.Api;
+using DigitalTitans.DotnetApi.Core.Common.Extensions;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 

@@ -3,7 +3,7 @@ using DigitalTitans.DotnetApi.Infrastructure.Database;
 using FluentValidation;
 using MediatR;
 using DigitalTitans.DotnetApi.Infrastructure.Database.Extensions;
-using DigitalTitans.DotnetApi.Common.Exceptions;
+using DigitalTitans.DotnetApi.Core.Common.Exceptions;
 
 namespace DigitalTitans.DotnetApi.Infrastructure.Mediator
 {

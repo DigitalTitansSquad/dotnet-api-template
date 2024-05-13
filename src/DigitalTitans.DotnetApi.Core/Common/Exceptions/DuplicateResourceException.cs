@@ -1,5 +1,5 @@
 ﻿using System;
-namespace DigitalTitans.DotnetApi.Common.Exceptions
+namespace DigitalTitans.DotnetApi.Core.Common.Exceptions
 {
     public class DuplicateResourceException(string resourceName) : Exception
     {

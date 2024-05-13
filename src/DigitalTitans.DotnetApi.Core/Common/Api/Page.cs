@@ -1,5 +1,5 @@
 ﻿using System;
-namespace DigitalTitans.DotnetApi.Common.Api;
+namespace DigitalTitans.DotnetApi.Core.Common.Api;
 
 public interface IPage<T>
 {

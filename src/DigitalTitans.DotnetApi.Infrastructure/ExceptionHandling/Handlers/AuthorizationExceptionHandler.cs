@@ -1,4 +1,4 @@
-using DigitalTitans.DotnetApi.Common.Exceptions;
+using DigitalTitans.DotnetApi.Core.Common.Exceptions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

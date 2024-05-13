@@ -1,4 +1,4 @@
-using DigitalTitans.DotnetApi.Common.Api;
+using DigitalTitans.DotnetApi.Core.Common.Api;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;

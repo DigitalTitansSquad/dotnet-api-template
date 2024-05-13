@@ -1,5 +1,5 @@
-using DigitalTitans.DotnetApi.Common.Exceptions;
-using DigitalTitans.DotnetApi.Common.Interfaces;
+using DigitalTitans.DotnetApi.Core.Common.Exceptions;
+using DigitalTitans.DotnetApi.Core.Common.Interfaces;
 using DigitalTitans.DotnetApi.Infrastructure.Services;
 using MediatR;
 

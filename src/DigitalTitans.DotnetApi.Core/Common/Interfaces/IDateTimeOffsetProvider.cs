@@ -1,4 +1,4 @@
-namespace DigitalTitans.DotnetApi.Common.Interfaces;
+namespace DigitalTitans.DotnetApi.Core.Common.Interfaces;
 
 public interface IDateTimeOffsetProvider
 {

@@ -1,4 +1,4 @@
-namespace DigitalTitans.DotnetApi.Common.Exceptions;
+namespace DigitalTitans.DotnetApi.Core.Common.Exceptions;
 
 public class AuthorizationException(string? message) : Exception(message)
 {

@@ -2,7 +2,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DigitalTitans.DotnetApi.Core\DigitalTitans.DotnetApi.Core.csproj" />
-    <ProjectReference Include="..\DigitalTitans.DotnetApi.Common\DigitalTitans.DotnetApi.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>

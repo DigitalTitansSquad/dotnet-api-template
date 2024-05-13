@@ -1,5 +1,5 @@
 ﻿using System;
-using DigitalTitans.DotnetApi.Common.Api;
+using DigitalTitans.DotnetApi.Core.Common.Api;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -18,7 +18,7 @@ namespace DigitalTitans.DotnetApi.Core.Features.GetUsers
         }
 
         [HttpGet]
-        public async Task<IPage<UserSummaryReadModel>> GetPageAsync(GetUsersQuery query)
+        public async Task<IPage<GetUsersReadModel>> GetPageAsync(GetUsersQuery query)
         {
             return await mediator.Send(query);
         }

@@ -1,6 +1,6 @@
-﻿using DigitalTitans.DotnetApi.Common.Auth;
-using DigitalTitans.DotnetApi.Common.Exceptions;
-using DigitalTitans.DotnetApi.Common.Interfaces;
+﻿using DigitalTitans.DotnetApi.Core.Common.Auth;
+using DigitalTitans.DotnetApi.Core.Common.Exceptions;
+using DigitalTitans.DotnetApi.Core.Common.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

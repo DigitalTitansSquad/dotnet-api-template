@@ -47,6 +47,6 @@ middleware.UseExceptionHandling();
 middleware.UseExceptionLogging();
 
 endpoints.MapControllers()
-    .RequireAuthorization(DigitalTitans.DotnetApi.Common.Auth.PolicyNames.DefaultPolicy);
+    .RequireAuthorization(DigitalTitans.DotnetApi.Core.Common.Auth.PolicyNames.DefaultPolicy);
 
 app.Run();

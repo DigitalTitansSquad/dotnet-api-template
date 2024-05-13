@@ -1,8 +1,7 @@
 ﻿using System;
 using AutoMapper;
-using DigitalTitans.DotnetApi.Common.Api;
-using DigitalTitans.DotnetApi.Common.Exceptions;
-using DigitalTitans.DotnetApi.Common.Interfaces;
+using DigitalTitans.DotnetApi.Core.Common.Api;
+using DigitalTitans.DotnetApi.Core.Common.Exceptions;
 using DigitalTitans.DotnetApi.Core.Common.Interfaces;
 using DigitalTitans.DotnetApi.Core.DomainEvents;
 using DigitalTitans.DotnetApi.Core.Models;

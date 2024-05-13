@@ -1,7 +1,7 @@
 ﻿using System;
-using DigitalTitans.DotnetApi.Common.Api;
+using DigitalTitans.DotnetApi.Core.Common.Api;
 
-namespace DigitalTitans.DotnetApi.Common.Extensions;
+namespace DigitalTitans.DotnetApi.Core.Common.Extensions;
 
 public static class IEnumerableExtensions
 {

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace DigitalTitans.DotnetApi.Common.Auth;
+namespace DigitalTitans.DotnetApi.Core.Common.Auth;
 
 public class PolicyNames
 {

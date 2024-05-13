@@ -1,9 +1,9 @@
 ﻿using System;
-using DigitalTitans.DotnetApi.Common.Api;
+using DigitalTitans.DotnetApi.Core.Common.Api;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 
-namespace DigitalTitans.DotnetApi.Common.Extensions;
+namespace DigitalTitans.DotnetApi.Core.Common.Extensions;
 
 public static class IQueryableExtensions
 {

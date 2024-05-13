@@ -1,6 +1,6 @@
 ﻿
 using System;
-using DigitalTitans.DotnetApi.Common.Interfaces;
+using DigitalTitans.DotnetApi.Core.Common.Interfaces;
 namespace DigitalTitans.DotnetApi.Infrastructure.Services
 {
     public class DateTimeOffsetProvider : IDateTimeOffsetProvider
