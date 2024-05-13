@@ -27,7 +27,6 @@ public class UpdateUserCommand : IRequest
         {
             CreateMap<UpdateUserCommand, UserEntity>();
         }
-
     }
 }
 
@@ -52,14 +51,18 @@ public class UpdateUserCommandValidator : AbstractValidator<UpdateUserCommand>
     }
 }
 
-public class UpdateUserCommandHandler(IDbContext dbContext, IMapper mapper, IDateTimeOffsetProvider dateTimeOffsetProvider, IMediator mediator) : IRequestHandler<UpdateUserCommand>
+public class UpdateUserCommandHandler(
+    IDbContext dbContext, 
+    IMapper mapper, 
+    IDateTimeOffsetProvider dateTimeOffsetProvider, 
+    IMediator mediator) : IRequestHandler<UpdateUserCommand>
 {
     private readonly IDbContext dbContext = dbContext;
     private readonly IMapper mapper = mapper;
     private readonly IDateTimeOffsetProvider dateTimeOffsetProvider = dateTimeOffsetProvider;
     private readonly IMediator mediator = mediator;
 
-    public async Task<Unit> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
+    public async Task Handle(UpdateUserCommand request, CancellationToken cancellationToken)
     {
         var user = await dbContext.Users.FirstOrDefaultAsync(u => u.ExternalId == request.ExternalId, cancellationToken: cancellationToken);
 
@@ -71,8 +74,6 @@ public class UpdateUserCommandHandler(IDbContext dbContext, IMapper mapper, IDat
         mapper.Map(request, user);
 
         await dbContext.SaveChangesAsync(cancellationToken);
-
-        return Unit.Value;
     }
 }
 
