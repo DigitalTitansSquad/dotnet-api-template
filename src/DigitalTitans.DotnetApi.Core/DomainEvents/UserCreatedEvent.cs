@@ -5,7 +5,7 @@ namespace DigitalTitans.DotnetApi.Core.DomainEvents;
 public record UserCreatedEvent : INotification
 {
     public UserCreatedEvent(
-        string id, 
+        long id, 
         string email, 
         string firstName, 
         string lastName, 
@@ -20,7 +20,7 @@ public record UserCreatedEvent : INotification
         ProfilePictureUrl = profilePictureUrl;
     }
 
-    public string Id { get; init; }
+    public long Id { get; init; }
     public string Email { get; init; }
     public string FirstName { get; init; }
     public string LastName { get; init; }

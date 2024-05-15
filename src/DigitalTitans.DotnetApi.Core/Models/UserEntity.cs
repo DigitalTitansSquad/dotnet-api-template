@@ -3,9 +3,9 @@ namespace DigitalTitans.DotnetApi.Core.Models
 {
     public class UserEntity : IRootEntity
     {
-        public string Id { get; set; } = default!;
-        public DateTimeOffset CreatedAtUtc { get; set; }
-        public DateTimeOffset? LastUpdatedAtUtc { get; set; }
+        public long Id { get; set; } = default!;
+        public DateTime CreatedAtUtc { get; set; }
+        public DateTime? LastUpdatedAtUtc { get; set; }
         public string Email { get; set; } = default!;
         public string FirstName { get; set; } = default!;
         public string LastName { get; set; } = default!;

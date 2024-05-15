@@ -16,7 +16,7 @@ namespace DigitalTitans.DotnetApi.Infrastructure.Services
         private readonly IHttpContextAccessor httpContextAccessor = httpContextAccessor;
         private readonly AppDbContext dbContext = dbContext;
 
-        public async Task<string> GetCurrentUserIdAsync()
+        public async Task<long> GetCurrentUserIdAsync()
         {
             if (httpContextAccessor.HttpContext == null)
             {
@@ -41,7 +41,7 @@ namespace DigitalTitans.DotnetApi.Infrastructure.Services
             return user.Id;
         }
 
-        public async Task<string?> GetCurrentUserIdOrDefaultAsync()
+        public async Task<long?> GetCurrentUserIdOrDefaultAsync()
         {
             if (httpContextAccessor.HttpContext == null)
                 return null;

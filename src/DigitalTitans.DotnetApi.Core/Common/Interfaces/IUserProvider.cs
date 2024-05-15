@@ -4,6 +4,6 @@ namespace DigitalTitans.DotnetApi.Core.Common.Interfaces;
 
 public interface IUserProvider
 {
-    Task<string> GetCurrentUserIdAsync();
-    Task<string?> GetCurrentUserIdOrDefaultAsync();
+    Task<long> GetCurrentUserIdAsync();
+    Task<long?> GetCurrentUserIdOrDefaultAsync();
 }

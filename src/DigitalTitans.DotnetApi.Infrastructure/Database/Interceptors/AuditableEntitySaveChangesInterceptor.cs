@@ -8,9 +8,9 @@ using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace DigitalTitans.DotnetApi.Infrastructure.Database.Interceptors;
 
-public class AuditableEntitySaveChangesInterceptor(IDateTimeOffsetProvider dateTime) : SaveChangesInterceptor
+public class AuditableEntitySaveChangesInterceptor(IDateTimeProvider dateTime) : SaveChangesInterceptor
 {
-    private readonly IDateTimeOffsetProvider _dateTime = dateTime;
+    private readonly IDateTimeProvider _dateTime = dateTime;
 
     public override InterceptionResult<int> SavingChanges(DbContextEventData eventData, InterceptionResult<int> result)
     {

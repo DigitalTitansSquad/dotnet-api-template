@@ -6,7 +6,7 @@ namespace DigitalTitans.DotnetApi.Infrastructure.Database.Extensions
 {
     public static class AppDbContextContextExtensions
     {
-        public static async Task<UserEntity?> GetUserOrDefaultAsync(this AppDbContext dbContext, string userId) => await dbContext.Users.FirstOrDefaultAsync(u => u.Id == userId);
+        public static async Task<UserEntity?> GetUserOrDefaultAsync(this AppDbContext dbContext, long userId) => await dbContext.Users.FirstOrDefaultAsync(u => u.Id == userId);
     }
 }
 

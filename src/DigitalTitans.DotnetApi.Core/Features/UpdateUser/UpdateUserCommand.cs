@@ -54,12 +54,12 @@ public class UpdateUserCommandValidator : AbstractValidator<UpdateUserCommand>
 public class UpdateUserCommandHandler(
     IDbContext dbContext, 
     IMapper mapper, 
-    IDateTimeOffsetProvider dateTimeOffsetProvider, 
+    IDateTimeProvider dateTimeProvider, 
     IMediator mediator) : IRequestHandler<UpdateUserCommand>
 {
     private readonly IDbContext dbContext = dbContext;
     private readonly IMapper mapper = mapper;
-    private readonly IDateTimeOffsetProvider dateTimeOffsetProvider = dateTimeOffsetProvider;
+    private readonly IDateTimeProvider dateTimeProvider = dateTimeProvider;
     private readonly IMediator mediator = mediator;
 
     public async Task Handle(UpdateUserCommand request, CancellationToken cancellationToken)

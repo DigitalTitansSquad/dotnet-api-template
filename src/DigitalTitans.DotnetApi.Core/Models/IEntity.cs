@@ -5,13 +5,13 @@ namespace DigitalTitans.DotnetApi.Core.Models
 
     public interface IRootEntity : IEntity
     {
-        string Id { get; set; }
+        long Id { get; set; }
     }
 
     public interface IAuditableEntity : IRootEntity
     {
-        DateTimeOffset CreatedAtUtc { get; set; }
-        DateTimeOffset? LastUpdatedAtUtc { get; set; }
+        DateTime CreatedAtUtc { get; set; }
+        DateTime? LastUpdatedAtUtc { get; set; }
     }
 }
 

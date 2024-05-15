@@ -8,7 +8,7 @@ namespace DigitalTitans.DotnetApi.Infrastructure.Services.Extensions
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services)
         {
-            services.AddSingleton<IDateTimeOffsetProvider, DateTimeOffsetProvider>();
+            services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
             services.AddTransient<IUserProvider, UserProvider>();
             services.AddSingleton<IClaimProvider, ClaimProvider>();
 

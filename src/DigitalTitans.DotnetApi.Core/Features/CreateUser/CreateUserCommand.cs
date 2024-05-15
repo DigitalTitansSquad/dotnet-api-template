@@ -11,10 +11,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DigitalTitans.DotnetApi.Core.Features.CreateUser
 {
-    public class CreateUserCommand : IRequest<string>
+    public class CreateUserCommand : IRequest<long>
     {
         [SwaggerIgnore]
-        public string Id { get; set; } = default!;
+        public long Id { get; set; } = default!;
         public string Email { get; set; } = default!;
         public string FirstName { get; set; } = default!;
         public string LastName { get; set; } = default!;
@@ -44,14 +44,13 @@ namespace DigitalTitans.DotnetApi.Core.Features.CreateUser
         }
     }
 
-    public class CreateUserCommandHandler(IDbContext dbContext, IMapper mapper, IDateTimeOffsetProvider dateTimeOffsetProvider, IMediator mediator) : IRequestHandler<CreateUserCommand, string>
+    public class CreateUserCommandHandler(IDbContext dbContext, IMapper mapper, IMediator mediator) : IRequestHandler<CreateUserCommand, long>
     {
         private readonly IDbContext dbContext = dbContext;
         private readonly IMapper mapper = mapper;
-        private readonly IDateTimeOffsetProvider dateTimeOffsetProvider = dateTimeOffsetProvider;
         private readonly IMediator mediator = mediator;
 
-        public async Task<string> Handle(CreateUserCommand request, CancellationToken cancellationToken)
+        public async Task<long> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
             var existingUser = await dbContext.Users.FirstOrDefaultAsync(u => u.ExternalId == request.ExternalId, cancellationToken: cancellationToken);
 
@@ -61,8 +60,6 @@ namespace DigitalTitans.DotnetApi.Core.Features.CreateUser
             }
 
             var user = mapper.Map<UserEntity>(request);
-
-            user.CreatedAtUtc = dateTimeOffsetProvider.GetUtcNow();
 
             await dbContext.Users.AddAsync(user, cancellationToken);
             await dbContext.SaveChangesAsync(cancellationToken);

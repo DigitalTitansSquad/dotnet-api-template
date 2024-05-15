@@ -7,17 +7,17 @@ namespace DigitalTitans.DotnetApi.Infrastructure.Mediator
 
     public interface IUserRequest<T> : IRequest<T>
     {
-        string UserId { get; set; }
+        long UserId { get; set; }
     }
 
     public interface IUserResourceRequest : IUserRequest
     {
-        string Id { get; set; }
+        long Id { get; set; }
     }
 
     public interface IUserResourceRequest<T> : IUserRequest<T>
     {
-        string Id { get; set; }
+        long Id { get; set; }
     }
 }
 
