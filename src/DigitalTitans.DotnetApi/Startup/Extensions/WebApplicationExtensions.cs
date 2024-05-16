@@ -1,4 +1,7 @@
-﻿namespace DigitalTitans.DotnetApi.Startup.Extensions;
+﻿using DigitalTitans.DotnetApi.Infrastructure.Database;
+using Microsoft.EntityFrameworkCore;
+
+namespace DigitalTitans.DotnetApi.Startup.Extensions;
 
 public static class WebApplicationExtensions
 {
@@ -11,5 +14,12 @@ public static class WebApplicationExtensions
         middleware = application;
         endpoints = application;
         app = application;
+    }
+
+    public static void ApplyMigrations(this WebApplication application)
+    {
+        using var scope = application.Services.CreateScope();
+        var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+        dbContext.Database.Migrate();
     }
 }

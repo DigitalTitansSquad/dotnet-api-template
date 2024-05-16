@@ -1,6 +1,6 @@
 using AutoMapper;
 using DigitalTitans.DotnetApi.Core.Common.Interfaces;
-using DigitalTitans.DotnetApi.Core.Features.GetUsers;
+using DigitalTitans.DotnetApi.Core.Features.Users.GetUsers;
 using DigitalTitans.DotnetApi.Core.Models;
 using DigitalTitans.DotnetApi.Mocks.Builders.Users;
 using FluentAssertions;

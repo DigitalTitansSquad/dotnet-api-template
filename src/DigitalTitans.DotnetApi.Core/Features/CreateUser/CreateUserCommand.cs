@@ -9,7 +9,7 @@ using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace DigitalTitans.DotnetApi.Core.Features.CreateUser
+namespace DigitalTitans.DotnetApi.Core.Features.Users.CreateUser
 {
     public class CreateUserCommand : IRequest<long>
     {
@@ -27,9 +27,6 @@ namespace DigitalTitans.DotnetApi.Core.Features.CreateUser
     {
         public CreateUserCommandValidator()
         {
-            RuleFor(x => x.Id)
-                .NotEmpty();
-
             RuleFor(x => x.Email)
                 .NotEmpty();
 

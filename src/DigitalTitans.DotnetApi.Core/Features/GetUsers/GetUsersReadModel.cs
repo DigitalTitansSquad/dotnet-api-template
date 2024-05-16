@@ -1,5 +1,5 @@
 
-namespace DigitalTitans.DotnetApi.Core.Features.GetUsers;
+namespace DigitalTitans.DotnetApi.Core.Features.Users.GetUsers;
 
 public class GetUsersReadModel
 {

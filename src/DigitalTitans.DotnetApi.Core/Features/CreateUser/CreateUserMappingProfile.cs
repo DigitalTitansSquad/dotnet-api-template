@@ -1,7 +1,7 @@
 using AutoMapper;
 using DigitalTitans.DotnetApi.Core.Models;
 
-namespace DigitalTitans.DotnetApi.Core.Features.CreateUser;
+namespace DigitalTitans.DotnetApi.Core.Features.Users.CreateUser;
 
 public class CreateUserMappingProfile : Profile
 {

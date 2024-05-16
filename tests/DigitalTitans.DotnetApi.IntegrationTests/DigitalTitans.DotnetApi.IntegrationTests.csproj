@@ -10,7 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.0" />
+    <PackageReference Include="NSubstitute" Version="5.1.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0" />
+    <PackageReference Include="Testcontainers.PostgreSql" Version="3.6.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
+    <PackageReference Include="FluentAssertions" Version="6.11.0" />    
     <PackageReference Include="xunit" Version="2.4.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -22,7 +27,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\src\DigitalTitans.DotnetApi\DigitalTitans.DotnetApi.csproj" />
     <ProjectReference Include="..\..\src\DigitalTitans.DotnetApi.Core\DigitalTitans.DotnetApi.Core.csproj" />
+    <ProjectReference Include="..\..\src\DigitalTitans.DotnetApi.Infrastructure\DigitalTitans.DotnetApi.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\tests\DigitalTitans.DotnetApi.Mocks\DigitalTitans.DotnetApi.Mocks.csproj" />
   </ItemGroup>
 
 </Project>

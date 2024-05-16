@@ -2,7 +2,7 @@ using AutoMapper;
 using DigitalTitans.AuctionNest.UnitTests.Extensions;
 using DigitalTitans.DotnetApi.Core.Common.Exceptions;
 using DigitalTitans.DotnetApi.Core.Common.Interfaces;
-using DigitalTitans.DotnetApi.Core.Features.CreateUser;
+using DigitalTitans.DotnetApi.Core.Features.Users.CreateUser;
 using DigitalTitans.DotnetApi.Core.Models;
 using FluentAssertions;
 using MediatR;

@@ -6,7 +6,7 @@ using DigitalTitans.DotnetApi.Core.Common.Interfaces;
 using FluentValidation;
 using MediatR;
 
-namespace DigitalTitans.DotnetApi.Core.Features.GetUsers
+namespace DigitalTitans.DotnetApi.Core.Features.Users.GetUsers
 {
     public class GetUsersQuery :
         PageAndSortFilter,
