@@ -7,6 +7,7 @@ using DigitalTitans.DotnetApi.Infrastructure.Database.Extensions;
 using DigitalTitans.DotnetApi.Infrastructure.FluentValidation.Extensions;
 using DigitalTitans.DotnetApi.Authorization.Extensions;
 using DigitalTitans.DotnetApi.Authentication.Extensions;
+using DigitalTitans.DotnetApi.Core.Features.Users;
 using DigitalTitans.DotnetApi.Core.Features.Users.CreateUser;
 using DigitalTitans.DotnetApi.Cors;
 using System.Reflection;
@@ -49,6 +50,8 @@ middleware.UseExceptionLogging();
 
 endpoints.MapControllers()
     .RequireAuthorization(DigitalTitans.DotnetApi.Core.Common.Auth.PolicyNames.DefaultPolicy);
+
+endpoints.AddUserEndpoints();
 
 if (app.Environment.IsEnvironment("Local") || 
     app.Environment.IsDevelopment() || 

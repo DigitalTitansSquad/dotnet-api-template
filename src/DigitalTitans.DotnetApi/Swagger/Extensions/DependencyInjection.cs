@@ -47,7 +47,10 @@ public static class DependencyInjection
                 {
                     return new[] { controllerActionDescriptor.ControllerName };
                 }
-                throw new InvalidOperationException("Unable to determine tag for endpoint.");
+
+                var route = api.RelativePath ?? "Unknown";
+                return new[] { $"Endpoint: {route}" };
+
             });
 
             swg.DocInclusionPredicate((name, api) => true);
