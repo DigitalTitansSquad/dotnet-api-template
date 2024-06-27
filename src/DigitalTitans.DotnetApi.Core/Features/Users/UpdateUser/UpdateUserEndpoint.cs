@@ -1,4 +1,5 @@
 
+using DigitalTitans.DotnetApi.Core.Common.Auth;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -11,7 +12,7 @@ public static class UpdateUserEndpoint
     public static void AddUpdateUserEndpoint(this IEndpointRouteBuilder endpoints)
     {
         endpoints.MapPut("/api/users/{id}",
-            [Authorize]
+            [Authorize(Policy = PolicyNames.DefaultPolicy)]
             [UserSwaggerOperation]
             async (IMediator mediator, long id, UpdateUserCommand command) =>
         {
