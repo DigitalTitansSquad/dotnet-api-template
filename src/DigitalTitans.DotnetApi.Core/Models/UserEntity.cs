@@ -1,7 +1,7 @@
 ﻿using System;
 namespace DigitalTitans.DotnetApi.Core.Models
 {
-    public class UserEntity : IRootEntity
+    public class UserEntity : IAuditableEntity
     {
         public long Id { get; set; } = default!;
         public DateTime CreatedAtUtc { get; set; }
